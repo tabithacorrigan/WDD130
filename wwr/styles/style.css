@@ -1,0 +1,115 @@
+#background {
+    height: 725px;
+    background-color: #134266;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/*NAVAGATION*/
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #fffcee;
+}
+
+nav a:hover {
+    background-color: #78C5D7;
+    color: #134266;
+}
+
+/*HERO IMAGE*/
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+/*FOOTER*/
+
+footer a {
+    color: #fffcee;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: #78C5D7;
+    color: #134266;
+}
+
+footer {
+    background-color: #134266;
+}
+
+footer p {
+    color: #fffcee;
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/*BOOKING/JOIN US*/
+
+.book, .join {
+    background-color: #78C5D7;
+    color: #134266;
+    text-decoration: none;
+}
+
+.book:hover, .join:hover {
+    background-color: #FCE172;
+    color: #393424;
+}
+
+/*ASSORTED*/
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+.icon {
+    width: 80px;
+}
+
+/*colors*/
+
+body {
+    background-color: #fffcee;
+}
+
+header {
+    background-color: #134266;
+}
+
+.msg {
+    background-color: #134266;
+}
+
+.home-title {
+    color: #393424;
+}
+
+h4 {
+    color: #393424;
+}
+
+.msg h2 {
+    color: #fffcee;
+}
+
+.msg p {
+    color:#fffcee;
+}
+
