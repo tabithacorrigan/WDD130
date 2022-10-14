@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Raleway:wght@500&display=swap');
+
+
+body {
+    background-color: #fffcee;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 80px
+}
+
 #background {
     height: 725px;
     background-color: #134266;
@@ -14,6 +29,8 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: #fffcee;
+    padding: 35px;
+    margin: 100px;
 }
 
 nav a:hover {
@@ -21,10 +38,15 @@ nav a:hover {
     color: #134266;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 /*HERO IMAGE*/
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    font-family: 'Cinzel Decorative', 'Bradley Hand', sans-serif;
 }
 
 #hero-img {
@@ -45,6 +67,8 @@ footer a:hover {
 
 footer {
     background-color: #134266;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -56,12 +80,20 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+.social {
+    padding-top: 15px;
+}
+
 /*BOOKING/JOIN US*/
 
 .book, .join {
     background-color: #78C5D7;
     color: #134266;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px, 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -71,6 +103,11 @@ footer p a:hover {
 
 /*ASSORTED*/
 
+h2 {
+    font-family: 'Cinzel Decorative', 'Bradley Hand', sans-serif;
+    margin: 0;
+}
+
 .button-box {
     text-align: center;
 }
@@ -79,15 +116,28 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #393424;
+}
+
+.mountains {
+    padding-top: 50px;
 }
 
 /*colors*/
-
-body {
-    background-color: #fffcee;
-}
 
 header {
     background-color: #134266;
@@ -95,10 +145,16 @@ header {
 
 .msg {
     background-color: #134266;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 50px;
 }
 
 .home-title {
     color: #393424;
+    font-family: 'Cinzel Decorative', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -107,9 +163,12 @@ h4 {
 
 .msg h2 {
     color: #fffcee;
+    font-family: 'Cinzel Decorative', 'Bradley Hand', sans-serif;
 }
 
 .msg p {
     color:#fffcee;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
