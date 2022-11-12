@@ -20,6 +20,51 @@ body {
     margin: 0;
 }
 
+#FAQ {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    align-content: left;
+
+}
+
+.q {
+    color: #134266;
+    font-family: 'Cinzel Decorative', 'Bradley Hand', sans-serif;
+    font-weight: 900;
+    margin-left: 40px;
+    padding-top: 60px;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: #134266;
+    font-family: 'Cinzel Decorative', 'Bradley Hand', sans-serif;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.answer {
+    margin: 20px;
+    font-size: large;
+    margin-left: 40px;
+}
+
+.pic {
+    float: right;
+    margin: 30px;
+    border: 10px solid #393424;
+    width: 500px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.pic:hover{
+        opacity: .6;
+        transform: scale(1.1)
+}
+
 .logo {
     width: 80px
 }
