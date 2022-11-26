@@ -10,7 +10,7 @@
 <body>
     <header>
         <!-- clicking the logo takes you home -->
-        <a class="link" href="index.html">
+        <a class="logo_link" href="index.html">
             <img class="logo" src="images/logo.jpg" alt="Home Atmosphere Logo">
         </a>
         <nav>
@@ -19,90 +19,96 @@
             <a href="tips.html">Tips and Tricks</a>
         </nav>
     </header>
-    <main class="slideshow">
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img class="slide" src="images/brown-livingroom.jpg" style="width:100%" alt="Living room">
-            <div class="text">Image by vanitjan on Freepik</div>
-            </div>
-        
-            <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img class="slide" src="images/shelf.jpg" style="width:100%" alt="Decorated Shelf">
-            <div class="text">Image by vanitjan on Freepik</div>
-            </div>
-        
-            <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img class="slide" src="images/living-room.jpg" style="width:100%" alt="Living Room">
-            <div class="text">Image by vanitjan on Freepik</div>
-            </div>
-            
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 5</div>
-                <img class="slide" src="images/sweater.jpg" style="width:100%" alt="Sweaters">
-                <div class="text">Image by pvproductions on Freepik</div>
+    <main class="home">
+        <div class="slideshow">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img class="slide" src="images/brown-livingroom.jpg" style="width:100%" alt="Living room">
+                <div class="text">Image by vanitjan on Freepik</div>
                 </div>
-        
-            <div class="mySlides fade">
-                <div class="numbertext">5 / 5</div>
-                <img class="slide" src="images/home.jpg" style="width:100%" alt="Home sign">
-                <div class="text">Image by pvproductions on Freepik</div>
-                </div>
-                    
-        
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
-
-        <!-- JavaScript for slideshow -->
-        <script>
-            let slideIndex = 0;
-            showSlides();
             
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 5000); // Change image every 5 seconds
-            }
-        </script>
-        <p>You want your home to feel “lived in” and “homey” for maximum comfort. Because regardless of whether or not you have a guest in your home, you want it to feel good for you. And if it feels good to you, it will feel good for your friends! </p>
-        <a id="link" href="decor.html">
-            <img class="card-img" src="images/livingroom.jpg" alt="Decor in a livingroom">
-            <h2>Decor Ideas</h2>
-        </a>
-        <a id="link" href="tips.html">   
-            <img class="card-img" src="images/newhome.jpg" alt="New home">
-            <h2>Tips and Tricks</h2>
-        </a>
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img class="slide" src="images/shelf.jpg" style="width:100%" alt="Decorated Shelf">
+                <div class="text">Image by vanitjan on Freepik</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img class="slide" src="images/living-room.jpg" style="width:100%" alt="Living Room">
+                <div class="text">Image by vanitjan on Freepik</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img class="slide" src="images/sweater.jpg" style="width:100%" alt="Sweaters">
+                    <div class="text">Image by pvproductions on Freepik</div>
+                    </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img class="slide" src="images/home.jpg" style="width:100%" alt="Home sign">
+                    <div class="text">Image by pvproductions on Freepik</div>
+                    </div>
+                        
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        
+            <!-- JavaScript for slideshow -->
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+            </script>
+        </div>
+        <section class="content">
+        <h1 id="intro">You want your home to feel “lived in” and “homey” for maximum comfort. Because regardless of whether or not you have a guest in your home, you want it to feel good for you. And if it feels good to you, it will feel good for your friends! </h1>
+        <div class="home-links">
+            <a class="link1" href="decor.html">
+                <img class="card-img" src="images/livingroom.jpg" alt="Decor in a livingroom">
+                <h2>Decor Ideas</h2>
+            </a>
+            <a class="link2" href="tips.html">   
+                <img class="card-img" src="images/newhome.jpg" alt="New home">
+                <h2>Tips and Tricks</h2>
+            </a>
+        </div>
+        </section>
     </main>
     <footer>
-        <p>Home Atmosphere &copy; 2022 - Tabitha Corrigan</p>
+        <p class="copy">Home Atmosphere &copy; 2022 - Tabitha Corrigan</p>
         <a href="site-plan.html">Site Plan</a>
         <p>Follow us on Instagram, Facebook, and Pintrest!</p>
     </footer>
