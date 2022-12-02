@@ -190,6 +190,12 @@ nav a:hover {
   border: 20px solid #FF3F6F;
 }
 
+.sticky.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
 
 /* FOOTER */
 
