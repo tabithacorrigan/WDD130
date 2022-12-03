@@ -190,12 +190,65 @@ nav a:hover {
   border: 20px solid #FF3F6F;
 }
 
-.sticky.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+/* GENERAL SETTINGS */
+
+p {
+  font-size: large;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  padding-left: 10px;
 }
 
+h1 {
+  font-size: 500%;
+  font-family: 'Srisakdi', cursive;
+  color: #8E416A;
+}
+
+h2 {
+  font-size: x-large bold;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+/* TIPS AND TRICKS */
+
+/* Create three equal columns that float next to each other */
+.column1, .column2 {
+  float: left;
+  width: 50%;
+}
+
+.column2 {
+  margin-top: 20px;
+}
+
+.pic1, .pic2 {
+  margin-left: 100px;
+  margin-bottom: 125px;
+}
+
+.pic1 {
+  border-width: 5px;
+  border: 20px solid #8E416A;
+}
+
+.pic2 {
+  border: 20px solid #FF3F6F;
+}
+
+/* clears floats after columns */
+#tips:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tip-title, .tip-sub {
+  text-align: center;
+}
+
+.tip-sub {
+  padding-bottom: 40px;
+}
 
 /* FOOTER */
 
