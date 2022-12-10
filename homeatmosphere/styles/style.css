@@ -210,44 +210,54 @@ h2 {
   font-weight: bold;
 }
 
-/* TIPS AND TRICKS */
+/* COLUMNS */
 
 /* Create three equal columns that float next to each other */
 .column1, .column2 {
   float: left;
-  width: 50%;
+  max-width: 50%;
 }
 
 .column2 {
   margin-top: 20px;
 }
 
-.pic1, .pic2 {
+.pic1, .pic2, .decorpic1, .decorpic2 {
   margin-left: 100px;
   margin-bottom: 125px;
 }
 
-.pic1 {
+.pic1, .decorpic1 {
   border-width: 5px;
   border: 20px solid #8E416A;
 }
 
-.pic2 {
+.decorpic1 {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.decorpic2 {
+  margin-left: 170px;
+  margin-top: 50px;
+}
+
+.pic2, .decorpic2 {
   border: 20px solid #FF3F6F;
 }
 
 /* clears floats after columns */
-#tips:after {
+.columns:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.tip-title, .tip-sub {
+.tip-title, .sub {
   text-align: center;
 }
 
-.tip-sub {
+.sub {
   padding-bottom: 40px;
 }
 
@@ -256,17 +266,29 @@ h2 {
 .container {
   position: relative;
   text-align: center;
+  font-family: 'Srisakdi', cursive;
+  color: #8E416A;
+  font-size: 500%;
+  font-weight: bold;
+  padding-bottom: 30px;
 }
 
-.img title {
+.container div {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 500%;
-  font-family: 'Srisakdi', cursive;
-  color: #8E416A;
   z-index: 100;
+}
+
+dt {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.how {
+  padding-left: 10px;
+  padding-top: 20px;
 }
 
 /* FOOTER */
